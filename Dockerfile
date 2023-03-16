@@ -50,9 +50,7 @@ RUN   make -C mxe  MXE_TARGETS=x86_64-w64-mingw32.static.posix \
    gcc glib libzip libusb1 libftdi1 hidapi glibmm qtbase qtimageformats \
    qtsvg qttranslations boost check gendef libieee1284 \
    qtbase_CONFIGURE_OPTS='-no-sql-mysql'
-RUN rm -f rm -fr mxe/pkg 
 RUN rm -fr mxe/.ccache
 RUN rm -fr mxe/log*/
 RUN rm -fr mxe/pkg
 RUN rm -fr mxe/tmp-*
-RUN rm -fr mxe/.ccache  
