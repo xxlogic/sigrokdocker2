@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:latest
 RUN mkdir -p /WORK
 WORKDIR /WORK
 RUN apt update   
