@@ -5,7 +5,7 @@ WORKDIR /WORK
 RUN apt update   && \
   apt  install -y --no-install-recommends\
     software-properties-common \
-    lsb-release dirmngr  gpg-agent bash  nsis  doxygen gem
+    lsb-release dirmngr  gpg-agent bash  nsis  doxygen rubygems
 
 RUN	gem install asciidoctor-pdf	
 RUN apt-key adv \
