@@ -5,8 +5,9 @@ WORKDIR /WORK
 RUN apt update   && \
   apt  install -y --no-install-recommends\
     software-properties-common \
-    lsb-release dirmngr  gpg-agent bash 
-	
+    lsb-release dirmngr  gpg-agent bash  nsis  doxygen 
+
+RUN	gem install asciidoctor-pdf	
 RUN apt-key adv \
     --keyserver keyserver.ubuntu.com \
     --recv-keys 86B72ED9 
