@@ -5,7 +5,7 @@ WORKDIR /WORK
 RUN apt update   && \
   apt  install -y --no-install-recommends\
     software-properties-common \
-    lsb-release dirmngr 
+    lsb-release dirmngr  gpg-agent
 RUN apt-key adv \
     --keyserver keyserver.ubuntu.com \
     --recv-keys 86B72ED9 
